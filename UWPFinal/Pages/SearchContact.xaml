@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="UWPFinal.Pages.SearchContact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPFinal.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel MaxWidth="300" Margin="30,50" Spacing="6">
+        <TextBlock FontWeight="Medium" FontSize="32">Search contact</TextBlock>
+        <TextBox Header="Name" x:Name="name"/>
+        <TextBox Header="Phone number" x:Name="phoneNumber"/>
+        <StackPanel Orientation="Horizontal" Margin="0,20" Spacing="10">
+            <Button Content="Search" Click="HandleSearchContact"/>
+            <Button Content="Back to list" Click="GoToList"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
